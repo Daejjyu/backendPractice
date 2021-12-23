@@ -6,7 +6,7 @@
   "plugins": ["@typescript-eslint"],
   "ignorePatterns": ["node_modules/"],
   "parserOptions": {
-    "project": "./tsconfig.json"
+    "project": "./server/tsconfig.json"
   },
   "extends": ["airbnb-typescript/base", "plugin:@typescript-eslint/recommended", "plugin:import/recommended", "prettier"],
   "settings": {

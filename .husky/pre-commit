@@ -1,4 +1,10 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-echo 'husky runned'
+cd client
+npm run lint-staged
+# npm run test -- --watchAll=false
+
+cd .. 
+cd server
+npm run lint-staged 

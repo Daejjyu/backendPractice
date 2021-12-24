@@ -4,8 +4,13 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "start": "nodemon src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "cd .. && husky install"
+    "prepare": "cd .. && husky install",
+    "lint-staged": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx}": "eslint --fix"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +25,8 @@
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-prettier": "^4.0.0",
     "husky": "^7.0.4",
-    "typescript": "^4.5.4"
+    "typescript": "^4.5.4",
+    "lint-staged": "^11.2.6",
+    "nodemon": "^2.0.14"
   }
 }
